@@ -15,26 +15,26 @@ app.listen(5000, () => {
   console.log("Server is running on port 5000");
 });
 
-// const mongoose = require('mongoose');
+const mongoose = require('mongoose');
 
-// // Connect to MongoDB
-// mongoose.connect('mongodb+srv://shabbirsvnit:hpBno7N32Eb2Xg84@resumebuilder.rcgnb.mongodb.net/', {
-//   useNewUrlParser: true,
-//   useUnifiedTopology: true
-// }).then(() => {
-//   console.log('Connected to MongoDB');
-// }).catch(err => {
-//   console.error('Error connecting to MongoDB', err);
-// });
+// Connect to MongoDB
+mongoose.connect('mongodb+srv://shabbirsvnit:hpBno7N32Eb2Xg84@resumebuilder.rcgnb.mongodb.net/', {
+  useNewUrlParser: true,
+  useUnifiedTopology: true
+}).then(() => {
+  console.log('Connected to MongoDB');
+}).catch(err => {
+  console.error('Error connecting to MongoDB', err);
+});
 
-// const User = require('./models/User'); // Import User model
-// const Introduction = require('./models/Introduction'); // Import Introduction model
-// const Education = require('./models/Education'); // Import Education model
-// const Skills = require('./models/Skills'); // Import Skills model
-// const Experience = require('./models/Experience'); // Import Experience model
-// const Projects = require('./models/Projects'); // Import Projects model
-// const Achievements = require('./models/Achievements'); // Import Achievements model
-// const Positions = require('./models/Positions'); // Import Positions model
+const User = require('./models/User'); // Import User model
+const Introduction = require('./models/Introduction'); // Import Introduction model
+const Education = require('./models/Education'); // Import Education model
+const Skills = require('./models/Skills'); // Import Skills model
+const Experience = require('./models/Experience'); // Import Experience model
+const Projects = require('./models/Projects'); // Import Projects model
+const Achievements = require('./models/Achievements'); // Import Achievements model
+const Positions = require('./models/Positions'); // Import Positions model
 
 // // const newUser = new User({
 // //   userID: 'user123',
