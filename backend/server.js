@@ -17,16 +17,6 @@ app.listen(5000, () => {
 
 const mongoose = require('mongoose');
 
-// Connect to MongoDB
-mongoose.connect('mongodb+srv://shabbirsvnit:hpBno7N32Eb2Xg84@resumebuilder.rcgnb.mongodb.net/', {
-  useNewUrlParser: true,
-  useUnifiedTopology: true
-}).then(() => {
-  console.log('Connected to MongoDB');
-}).catch(err => {
-  console.error('Error connecting to MongoDB', err);
-});
-
 const User = require('./models/User'); // Import User model
 const Introduction = require('./models/Introduction'); // Import Introduction model
 const Education = require('./models/Education'); // Import Education model
